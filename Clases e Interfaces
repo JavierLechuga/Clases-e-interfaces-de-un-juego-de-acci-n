@@ -1,0 +1,56 @@
+// Ejercicios de clases e interfaces de un juego de acción
+
+interface WeaponBehavior{
+public void useWeapon();
+}
+
+class KnifeBehavior implements WeaponBehavior{
+public void useWeapon() {
+}
+}
+
+class BowAndArrowBehavior implements WeaponBehavior{
+public void useWeapon() {
+}
+}
+
+class AxeBehavior implements WeaponBehavior{
+public void useWeapon() {
+}
+}
+
+class SwordBehavior implements WeaponBehavior{
+public void useWeapon() {
+}
+}
+
+abstract class Character{
+WeaponBehavior weapon;
+public void setWeapon(WeaponBehavior w) {
+this.weapon = w;
+}
+public abstract void fight();
+}
+
+
+class Queen extends Character{
+public void fight() {
+ }
+}
+
+class King extends Character{
+public void fight() {
+}
+
+
+class Troll extends Character{
+public void fight() {
+}
+
+}
+
+class Knight extends Character{
+public void fight() {
+}
+
+}
